@@ -1,3 +1,15 @@
+general commands:
+
+cd ..
+mkdir
+rm
+touch
+clear
+ls
+
+
+git commands:
+
 $git -- version		//detects the currently installed git version
 $git init 		//initialize local git repository - creates a ".git" hidden folder inside a folder that holds data
 $git add <file>		//add file(s) to index (staging area)
@@ -5,9 +17,17 @@ $git add <file>		//add file(s) to index (staging area)
 	$git rm--cached <file> 		//removes file from staging area
 $git status		//check status of working tree (review staging area)
 $git commit		//commit changes to index (takes everything from the index/staging area and puts in the local repository)
+	$git commit -m "Enter comment here"	//adds a quick comment
 $git push		//push to remote repository (such as github)
 $git pull		//pull latest from remote repository (pull a file from the repository)
 $git clone		//clone entire (remote) repository into a new directory (your current folder)
 
 $git config --global user.name "Mihael Keskic"
 $git config --global user.email "mkeskic@gmail.com"
+
+
+
+
+------------------------
+
+touch .gitingore (creates hidden file, any filename listed inside gets ignored and foregoed by staging and commiting)
